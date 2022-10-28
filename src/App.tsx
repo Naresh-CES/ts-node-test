@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from '@reduxjs/toolkit';
 import { actionCreators, State } from './Redux';
-import { useSelector } from 'react-redux';
 
 function App() {
   const amount = useSelector((state: State) => state.bank);
